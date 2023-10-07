@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>hum_menu_blg</title>
+</head>
+<body>
+	<div class="content_body">
+		<header>
+			<div class="header_container">
+				<div class="menu_container">
+					<img class="menu_close" src="img/ham-menu-image01.png">
+					<img class="menu_open" src="img/ham-menu-image02.png">    
+				</div>
+				<h1>サイトタイトル</h1>
+			</div>
+		</header>
+		<nav class="sample_sp_menu">
+			<ul>
+				<li>HOME</li>
+				<li>ABOUT</li>
+				<li>NEWS</li>
+				<li>CONTACT</li>
+			</ul>
+		</nav>
+		<section>
+			<div>
+				<p>ここにキャッチコピーが入ります。</p>
+			</div>
+		</section>
+	</div>
+  <script>
+  {
+    const MenuContainer = document.querySelector('.menu_container');
+    const samplespmenu = document.querySelector('.sample_sp_menu');
+    const menuClose = document.querySelector('.menu_close');
+    const menuOpen = document.querySelector('.menu_open');
+    
+    MenuContainer.addEventListener('click', () => {
+      samplespmenu.classList.toggle('active');
+      menuClose.classList.toggle('active');
+      menuOpen.classList.toggle('active');
+    });
+   
+  }
+  </script>
+</body>
+</html>
